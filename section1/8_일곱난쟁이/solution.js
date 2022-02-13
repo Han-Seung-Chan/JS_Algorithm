@@ -1,7 +1,5 @@
 function solution(arr) {
-  const sum = arr.reduce((acc, cur) => {
-    return acc + cur;
-  }, 0);
+  const sum = arr.reduce((acc, cur) => acc + cur, 0);
 
   for (let i = 0; i < arr.length; i++) {
     for (let j = i + 1; j < arr.length; j++) {
@@ -9,7 +7,7 @@ function solution(arr) {
 
       if (sum - faker === 100) {
         arr.splice(i, 1);
-        arr.splice(j, 1);
+        arr.splice(j - 1, 1);
 
         return arr;
       }
