@@ -1,6 +1,6 @@
 function solution(n, arr) {
   let answer = arr[0];
-  for (let i = 1; i < 5; i++) {
+  for (let i = 1; i < n; i++) {
     if (answer.length < arr[i].length) answer = arr[i];
   }
   return answer;
