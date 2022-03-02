@@ -1,8 +1,8 @@
-function solution(arr) {
+function solution(array) {
   let answer = 0;
   let maxHeight = 0;
 
-  arr.forEach((el) => {
+  array.forEach((el) => {
     if (maxHeight < el) {
       answer++;
       maxHeight = el;
