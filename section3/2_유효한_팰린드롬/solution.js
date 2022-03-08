@@ -1,6 +1,6 @@
 function solution(str) {
   const strArr = str.split('');
-  const reverse = str.split('').reverse();
+  const reverseArr = str.split('').reverse();
   let answer = true;
   const forward = [];
   const opposite = [];
@@ -10,7 +10,7 @@ function solution(str) {
     if (ASCII >= 97 && ASCII <= 122) forward.push(el.toLowerCase());
   });
 
-  reverse.forEach((el) => {
+  reverseArr.forEach((el) => {
     let ASCII = el.toLowerCase().charCodeAt();
     if (ASCII >= 97 && ASCII <= 122) opposite.push(el.toLowerCase());
   });
